@@ -1,0 +1,6 @@
+iform_remote_download.settings:
+  title: 'Indicia remote download settings'
+  description: 'Settings page for the Indicia remote download module'
+  parent: iform.admin_config_iform
+  route_name: iform_remote_download.settings
+  weight: 0

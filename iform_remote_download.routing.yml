@@ -1,0 +1,28 @@
+iform_remote_download.settings:
+  path: '/admin/config/iform/iform_remote_download_settings'
+  defaults:
+    _form: '\Drupal\iform_remote_download\Form\SettingsForm'
+    _title: 'Indicia remote download settings'
+  requirements:
+    _permission: 'admin iform'
+iform_remote_download.login:
+  path: '/remote_download/login'
+  defaults:
+    _controller: '\Drupal\iform_remote_download\Controller\IformRemoteDownloadController::userLogin'
+    _title: 'User login'
+  requirements:
+    _access: 'TRUE'
+iform_remote_download.privileges:
+  path: '/remote_download/privileges'
+  defaults:
+    _controller: '\Drupal\iform_remote_download\Controller\IformRemoteDownloadController::userPrivileges'
+    _title: 'User privileges'
+  requirements:
+    _access: 'TRUE'
+iform_remote_download.download:
+  path: '/remote_download/download'
+  defaults:
+    _controller: '\Drupal\iform_remote_download\Controller\IformRemoteDownloadController::download'
+    _title: 'Remote download'
+  requirements:
+    _access: 'TRUE'
