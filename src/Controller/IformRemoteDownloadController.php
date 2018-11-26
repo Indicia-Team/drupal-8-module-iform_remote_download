@@ -167,6 +167,7 @@ class IformRemoteDownloadController extends ControllerBase {
         'ownGroups' => 0,
         'surveys' => empty($_POST['survey_id']) ? '' : $_POST['survey_id'],
         'ownSurveys' => empty($_POST['survey_id']) ? 0 : 1,
+        'uploadFolder' => \report_helper::$base_url . 'upload/',
       ],
       'sharing' => 'data_flow',
     ];
